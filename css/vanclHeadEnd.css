@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #808080;
+    list-style: none;
+    font-family: "宋体";
+}
+html,body{
+    width: 100%;
+}
+a{
+    text-decoration:none;
+}
+/* 版心 */
+#vancl-centre{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+/* 一整块头部 */
+.vancl-head{
+    height: 167px;
+    /* background: burlywood; */
+}
+/* 头部顶端 */
+.vancl-head-top{
+    height: 32px;
+    line-height: 31px;
+    background-color:#f7f7f7 ;
+    border-bottom: 1px solid #ccc;
+}
+/* 注册登录盒子 */
+.vancl-enter{
+    width: 245px;
+    height: 32px;
+    float: right;
+}
+/* 我的订单 */
+.vancl-indent{
+    width: 62px;
+    height: 32px;
+    float: right;
+}
+.a-indent:hover{
+    color: #a10000;
+}
+/* 通知盒子 */
+.vancl-notice{
+    width: 110px;
+    height: 29px;
+    float: right;
+    margin-left: 20px;
+    position: relative;
+}
+.a-notice:hover{
+    color: #a10000;
+}
+.img-notice{
+    position: absolute;
+    left: -25px;
+    top: 6px;
+}
+/* 微信微博盒子 */
+.vancl-media{
+    float: right;
+    line-height: 31px;
+    position: absolute;
+    top: 5px;
+    right: 180px;
+}
+.vancl-weibo{
+    position: absolute;
+    right: -20px;
+    top: 2px;
+}
+/* 微信二维码 */
+.vancl-b{
+    position: absolute;
+    right: 22px;
+    top: 27px;
+    border: 1px solid #ccc;
+    height: 171px;
+    display: none;
+    z-index: 100;
+}
+.vancl-wei:hover{
+    cursor: pointer;
+}
+.b-img{
+    width: 150px;
+    height: 171px;
+}
+.span-weixin:hover .vancl-b{
+    display: inline-block;
+}
+/* 搜索盒子 */
+.vancl-search{
+    width: 1200px;
+    height: 62px;
+    margin: 20px auto 5px;
+}
+/* 功能盒子 */
+.vancl-search-function{
+    width: 438px;
+    height: 60px;
+    float: right;
+    padding-top: 8px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/* 搜索框 */
+.vancl-search-ipt{
+    width: 261px;
+    height: 29px;
+    border: 1px solid #c9caca;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+/* 搜索按钮 */
+.vancl-search-but{
+    width: 49px;
+    height: 29px;
+    background: url('../images/vancl-synthesize.png') no-repeat scroll -100px 0px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+    position: absolute;
+    top: 61px;
+    right: 288px;
+}
+/* 购物车 */
+.shopping-car{
+    width: 107px;
+    height: 28px;
+    float: right;
+    text-align: center;
+    line-height: 29px;
+}
+.shopping-car-a{
+    color: #fff;
+    width: 107px;
+    height: 28px;
+    display: inline-block;
+    background: url('../images/vancl-synthesize.png') no-repeat scroll -153px 0px;    
+}
+.shopping-car-a:hover{
+    color: #a10000;
+    background: url('../images/vancl-synthesize.png') no-repeat scroll -153px -30px;    
+}
+.shopping-car-span{
+    color: #fff;
+}
+.shopping-car-a:hover .shopping-car-span{
+    color: #a10000;
+}
+/* 搜索框下面的链接盒子 */
+.vancl-search-link{
+    width: 455px;
+    height: 23px;
+    padding: 5px 0 0 15px;
+    box-sizing: border-box;
+}
+.vancl-search-p{
+    width: 440px;
+    height: 18px;
+    line-height: 18px;
+    box-sizing: border-box;
+}
+.vancl-search-p a{
+    margin-right: 3px;
+}
+/* 导航盒子 */
+.vancl-nav-box{
+    height: 46px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.vancl-nav-box ul li{
+    float: left;
+    width: 78px;
+    height: 32px;
+    text-align: center;
+    position: relative;
+}
+.vancl-nav-box ul li:hover>a{
+    color: #a10000;
+}
+.vancl-nav-box ul li a{
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+}
+.vancl-nav-span{
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    margin-top: 28px;
+
+}
+.vancl-nav-li-a{
+    width: 185px;
+    height: 46px;
+    display: inline-block;
+    background: url('../images/vancl-logo.png') no-repeat scroll 0px 0px;
+}
+.vancl-nav-oneli{
+    margin-left: 128px;
+    margin-top: 26px;
+}
+.vancl-nav-twoli{
+    margin: 26px 6px;
+}
+.vancl-nav-em{
+    position: absolute;
+    top: -5px;
+    left: 55px;
+}
+.vancl-nav-spans{
+    width: 99px;
+    height: 6px;
+    background: #a10000;
+    display: inline-block;
+    position: absolute;
+    top: 26px;
+    left: -10px;
+    display: none;
+}
+.vancl-nav-box ul li:hover .vancl-nav-spans{
+    display: inline-block;
+}
+/* 下拉列表 */
+.vancl-nav-uls{
+    width: 99px;
+    height: 430px;
+    padding-top: 5px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: -10px;
+    top: 17px;
+    text-align: center;
+    box-sizing: border-box;
+    border-top: none;
+    display: none;
+}
+.vancl-nav-uls > li{
+    line-height: 32px;
+    margin-left: 10px;
+}.vancl-nav-uls > li > a {
+    line-height: 32px;
+}
+.vancl-nav-box ul li:hover .vancl-nav-uls{
+    display: inline;
+    z-index: 1000000000;
+}
+/* 返回首页盒子 */
+.vancl-return{
+    width: 1200px;
+    height: 270px;
+    margin: 0 auto;
+}
+.vancl-return-a{
+    display: inline-block;
+    width: 1200px;
+    height: 270px;
+    background: url('../images/vancl-return.png') no-repeat scroll;
+}
+.vancl-return-a:hover{
+    box-shadow: 5px 5px 150000px 0 rgba(0, 0, .1, 5);
+    -webkit-box-shadow: #d4d2d2 0px 0px 100px;
+    -moz-box-shadow: #d4d2d2 0px 0px 10px;
+}
+/* 客服盒子 */
+.vancl-bottom-service{
+    width: 1200px;
+    height: 284px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e1;
+    margin-top: 70px;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.vancl-bottom-service-top-li{
+    width: 371px;
+    height: 138px;
+    float: left;
+    margin-top: 15px;
+}
+.vancl-bottom-service-top-p{
+    text-align: center;
+    margin: 15px auto 30px;
+}
+.vancl-bottom-service-top-p-two{
+    text-align: center;
+    font-size: 14px;
+    color: #727171;
+    font-family: "Microsoft YaHei";
+    line-height: 26px;
+}
+.vancl-bottom-service-top-p-width{
+    width: 156px;
+    height: 32px;
+    color: #fff;
+    background: #a10000;
+    line-height: 32px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+}
+.vancl-bottom-service-top-li-two{
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom: none;
+}
+/* 二维码 */
+.vancl-bottom-service-top-img{
+    width: 104px;
+    height: 104px;
+}
+.vancl-bottom-service-top-em{
+    font-style :normal;
+    font-size: 14px;
+    color: #a10000;
+    font-family: "Microsoft YaHei";
+}
+
+.vancl-bottom-service-bottom{
+    width: 1118px;
+    height: 26px;
+    padding: 17px 0px 14px;
+    margin-top: 178px;
+}
+.vancl-bottom-service-bottom-ul{
+    background: #f8f8f8;
+    width: 1118px;
+    height: 57px;
+}
+.vancl-bottom-service-bottom-li{
+    width: 179px;
+    height: 26px;
+    border-right: 1px solid #ccc;
+    float: left;
+    margin: 18px 0 18px 5px;
+    text-align: center;
+}
+.vancl-bottom-service-bottom-li > a{
+    line-height: 28px;
+    color: #323232;
+    font-family: "Microsoft YaHei";
+}
+.vancl-bottom-service-bottom-liend{
+    border: none;
+}
+/* 底部盒子 */
+.vancl-footer{
+    width: 100%;
+    height: 136px;
+    border-top: 1px solid #000;
+    margin-top: 20px;
+}
+.vancl-footer-top{
+    width: 100%;
+    height: 61px;
+}
+.vancl-footer-top-P{
+    text-align: center;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: #3e3a39;
+    margin: 10px 0;
+}
+
+.vancl-footer-bottom{
+    width: 980px;
+    height: 45px;
+    margin: 0 auto;
+    text-align: center;
+}
+.vancl-footer-bottom-a-one{
+    display: inline-block;
+    width: 112px;
+    height: 40px;
+    background: url('../images/vancl-partner.png') no-repeat scroll 0px -582px;
+    margin: 0 5px;
+}
+.vancl-footer-bottom-span{
+    display: inline-block;
+    width: 156px;
+    height: 45px;
+    background: url('../images/vancl-partner.png') no-repeat scroll 0px -629px;
+    margin: 0 5px;
+
+}
+.vancl-footer-bottom-a-two{
+    display: inline-block;
+    width: 96px;
+    height: 38px;
+    background: url('../images/vancl-partner.png') no-repeat scroll 0px -676px;
+    margin: 0 5px;
+
+}
+.vancl-footer-bottom-a-three{
+    display: inline-block;
+    width: 100px;
+    height: 42px;
+    background: url('../images/vancl-partner.png') no-repeat scroll -98px -675px;
+    margin: 0 5px;
+
+}
+.vancl-footer-bottom-a-four{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background: url('../images/vancl-partner.png') no-repeat scroll -202px -675px;
+    margin: 0 5px;
+
+}
+.vancl-footer-bottom-a-five{
+    display: inline-block;
+    width: 120px;
+    height: 39px;
+    margin: 0 5px;
+
+}
+.vancl-footer-bottom-a-five img{
+    display: inline-block;
+    width: 120px;
+    height: 39px;
+    margin: 0 5px;
+
+}
+
+
