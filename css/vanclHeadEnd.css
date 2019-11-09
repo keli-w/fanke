@@ -77,7 +77,7 @@ a{
 /* 微信二维码 */
 .vancl-b{
     position: absolute;
-    right: 22px;
+    right: 0px;
     top: 27px;
     border: 1px solid #ccc;
     height: 171px;
@@ -431,5 +431,37 @@ a{
     margin: 0 5px;
 
 }
-
+/* 回到顶部 */
+.vancl-gototop{
+    position: fixed;
+    right: 5px;
+    top: 520px;
+}
+/* .vancl-gototop a{
+    float: left;
+} */
+.vancl-gototop-one{
+    display: block;
+    width: 75px;
+    height: 78px;
+    background: url('../images/vancl-gototop.png') no-repeat scroll;
+}
+.vancl-gototop-two{
+    display: block;
+    width: 75px;
+    height: 77px;
+    background: url('../images/vancl-gototop.png') no-repeat scroll 0px -78px;
+}
+.vancl-gototop-three{
+    display: block;
+    width: 75px;
+    height: 72px;
+    background: url('../images/vancl-gototop.png') no-repeat scroll 0px -154px;
+}
+.vancl-gototop-four{
+    display: block;
+    width: 75px;
+    height: 56px;
+    background: url('../images/vancl-gototop.png') no-repeat scroll 0px -226px;
+}
 
