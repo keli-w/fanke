@@ -1,0 +1,412 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.wrap{
+   margin: auto;
+    width: 1200px;
+    height: 100%;
+    background: #ffffff;
+    
+}
+
+/* 轮播图 */
+.swiper-container {
+    width: 1200px;
+    height: 535px;
+}
+
+
+/* 两个杠图 */
+.ia100{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.ia181{
+    margin-bottom: 10px;
+}
+/* 导入第一排图 */
+.content{
+    overflow: hidden;
+}
+
+.content .goods{
+    float: left;
+    width: 232px;
+    height: 327px;
+   margin-right: 8px;
+}
+.content .goods span{
+    float: left;
+
+}
+.content .goods strong{
+    color: #333;
+    
+}
+.content .goods p{
+    margin-top: 10px;
+    float: left;
+    font-size: 14px;
+    color: red;
+    padding-left: 10px;
+    margin-right: 88px;
+}
+.content .goods b{
+    font-size: 22px;
+    color: red;
+    padding-left: 10px;
+}
+
+.content .goods h3{
+    height: 45px;
+    font-size: 14px;
+    color: #333;
+    padding: 0 10px;
+}
+.content .goods del{
+    color: #999;
+}
+/* 优惠券 */
+.ia607{
+    margin-top: 10px;
+}
+.img{
+    margin: 10px 0 10px 0;
+}
+.img4{
+    width: 296px;
+    height: 387px;
+}
+.imgs{
+    width: 1200px;
+    height: 387px;
+}
+.ia607{
+    margin-top: 20px;
+}
+.ia608{
+    float: left;
+}
+.ia611{
+    float: left;
+}
+.ia614{
+    margin-top: 10px;
+}
+/* 快速选购 */
+.ia618{
+    margin: 20px 0 20px 0;
+}
+.ia630{
+    margin: 20px 0 20px 0;
+}
+.ia632{
+    float: left;
+}
+.ia635{
+    float: left;
+}
+.ia635_2{
+    margin-top: 20px;
+}
+.ia166{
+    margin: 20px 0 20px 0;
+}
+.log{
+    width: 1200px;
+    height: 592px;
+}
+.log img{
+    width: 398px;
+    height: 592px;
+}
+.ia107{
+    margin: 20px 0 20px 0;
+}
+/* 优选推荐 */
+h3{ 
+    text-align: center; 
+    color: #999;
+    margin: 20px 0  20px  0;
+}
+.select{
+    width: 1200px;
+    height: 1070px;
+}
+.foursome{
+    float: left;
+    height: 509px;
+    width: 590px;
+    border: 1px solid #999;
+    margin-right: 10px;
+}
+.foursome p{
+    float: left;
+    margin: 20px 0  20px  10px;
+    font-size: 14px;
+    color: #555;
+}
+.foursome strong{
+    float: right;
+    margin: 20px 10px  20px 0;
+    font-size: 14px;
+    color: rgb(216, 27, 27);
+}
+.foursome2{
+    float: left;
+    width: 280px;
+    height: 530px;
+    margin-right: 10px;
+}
+
+ .one{
+    width: 290px;
+    height: 249px;
+    border: 1px solid #999;
+}
+.one p{
+    float: left;
+    margin: 20px 0  20px  10px;
+    font-size: 14px;
+    color: #555;
+}
+.one strong{
+    float: right;
+    margin: 20px 10px  20px 0;
+    font-size: 14px;
+    color: rgb(216, 27, 27);
+}
+.one b{
+    font-size: 16px;
+    margin: 20px 10px  20px 10px;
+}
+.two{
+    margin-top: 10px;
+    width: 290px;
+    height: 249px;
+    border: 1px solid #999;
+}
+.two p{
+    float: left;
+    margin: 20px 0  20px  10px;
+    font-size: 14px;
+    color: #555;
+}
+.two strong{
+    float: right;
+    margin: 20px 10px  20px 0;
+    font-size: 14px;
+    color: rgb(216, 27, 27);
+}
+.two b{
+    font-size: 16px;
+    margin: 20px 10px  20px 10px;
+}
+.foursome1{
+    margin-left: 10px;
+    float: left;
+    width:286px ;
+    height: 509px;
+    border: 1px solid #999;
+}
+.foursome1 p{
+    float: left;
+    margin: 20px 0  20px  10px;
+    font-size: 14px;
+    color: #555;
+}
+.foursome1 strong{
+    float: right;
+    margin: 20px 10px  20px 0;
+    font-size: 14px;
+    color: rgb(216, 27, 27);
+}
+/* 第二排 */
+.foursome_1{
+    float: left;
+    height: 509px;
+    width: 590px;
+    border: 1px solid #999;
+    margin-right: 10px;
+}
+.foursome_1 p{
+    float: left;
+    margin: 20px 0  20px  10px;
+    font-size: 14px;
+    color: #555;
+}
+.foursome_1 strong{
+    float: right;
+    margin: 20px 10px  20px 0;
+    font-size: 14px;
+    color: rgb(216, 27, 27);
+}
+.foursome2_2{
+    float: left;
+    width: 280px;
+    height: 530px;
+    margin-right: 10px;
+}
+.one_1{
+    width: 290px;
+    height: 249px;
+    border: 1px solid #999;
+    margin-bottom: 10px;
+}
+.one_1 p{
+    float: left;
+    margin: 20px 0  20px  10px;
+    font-size: 14px;
+    color: #555;
+}
+.one_1 strong{
+    float: right;
+    margin: 20px 10px  20px 0;
+    font-size: 14px;
+    color: rgb(216, 27, 27);
+}
+.one_1 b{
+    font-size: 16px;
+    margin: 20px 10px  20px 10px;
+}
+.two_2{
+    margin-top: 10px;
+    width: 290px;
+    height: 249px;
+    border: 1px solid #999;
+}
+.two_2 p{
+    float: left;
+    margin: 20px 0  20px  10px;
+    font-size: 14px;
+    color: #555;
+}
+.two_2 strong{
+    float: right;
+    margin: 20px 10px  20px 0;
+    font-size: 14px;
+    color: rgb(216, 27, 27);
+}
+.two_2 b{
+    font-size: 16px;
+    margin: 20px 10px  20px 10px;
+}
+.foursome1_2{
+    margin-left: 10px;
+    float: left;
+    height: 509px;
+    width: 286px;
+    border: 1px solid #999;
+}
+.foursome1_2 p{
+    float: left;
+    margin: 20px 0  20px  10px;
+    font-size: 14px;
+    color: #555;
+}
+.foursome1_2 strong{
+    float: right;
+    margin: 20px 10px  20px 0;
+    font-size: 14px;
+    color: rgb(216, 27, 27);
+}
+/* 下装推荐 */
+.pants{
+    width: 1200px;
+    height: 530px;
+}
+.pants h4{ 
+    text-align: center; 
+    color: #999;
+   margin: 20px 0  20px  0;
+}
+
+.pants1{
+    float: left;
+    width: 285px;
+    border: 1px solid #999;
+}
+.pants1 p{
+    float: left;
+    margin: 10px 0  10px  10px;
+    font-size: 14px;
+    color: #555;
+
+}
+.pants1 strong{
+    float: right;
+    margin: 10px 10px  10px 0;
+    font-size: 14px;
+    color: rgb(216, 27, 27);
+}
+.pants2{
+    float: left;
+    width: 285px;
+    border: 1px solid #999;
+    margin: 0 10px 0 10px;
+}
+.pants2 p{
+    float: left;
+    margin: 10px 0  10px  10px;
+    font-size: 14px;
+    color: #555;
+
+}
+.pants2 strong{
+    float: right;
+    margin: 10px 10px  10px 0;
+    font-size: 14px;
+    color: rgb(216, 27, 27);
+}
+.pants3{
+    float: left;
+    width: 285px;
+    border: 1px solid #999;
+    margin: 0 10px 0 10px;
+}
+.pants3 p{
+    float: left;
+    margin: 10px 0  10px  10px;
+    font-size: 14px;
+    color: #555;
+
+}
+.pants3 strong{
+    float: right;
+    margin: 10px 10px  10px 0;
+    font-size: 14px;
+    color: rgb(216, 27, 27);
+}
+.pants4{
+    float: left;
+    width: 285px;
+    border: 1px solid #999;
+}
+.pants4 p{
+    float: left;
+    margin: 10px 0  10px  10px;
+    font-size: 14px;
+    color: #555;
+
+}
+.pants4 strong{
+    float: right;
+    margin: 10px 10px  10px 0;
+    font-size: 14px;
+    color: rgb(216, 27, 27);
+}
+/* 更多精品 */
+.supreme{
+    height: 716px;
+}
+.supreme h5{
+    text-align: center; 
+    color: #999;
+   margin: 20px 0  20px  0;
+}
+

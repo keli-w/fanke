@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ao</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <style>
+        .swiper-container {
+            width: 1200px;
+            height: 535px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="swiper-container" id="mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href=""><img src="pic/ia_300000000.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href=""><img src="pic/ia_300000001.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href=""><img src="pic/ia_100000073.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href=""><img src="pic/ia_100000072.jpg" alt=""></a>
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+    </div>
+
+
+    <script src="js/swiper.js"></script>
+    <script>
+
+        var mySwiper = new Swiper('#mySwiper', {
+
+            loop: true, // 循环模式选项
+
+            autoplay: {
+                delay: 5000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        })
+        mySwiper.el.onmouseover = function () {
+            mySwiper.autoplay.stop();
+        }
+        mySwiper.el.onmouseout = function () {
+            mySwiper.autoplay.start();
+        }   
+    </script>
+</body>
+
+</html>

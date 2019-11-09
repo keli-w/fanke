@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>shouye</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <style>
+        .swiper-container {
+            width: 1200px;
+            height: 535px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="swiper-container" id="mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href=""><img src="pic/ia_100000072.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href=""><img src="pic/ia_100000073.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href=""> <img src="pic/ia_100000074.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href=""> <img src="pic/ia_100000075.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href=""><img src="pic/ia_100000076.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href=""> <img src="pic/ia_100000077.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href=""> <img src="pic/ia_100000078.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script src="js/swiper.js"></script>
+    <script>
+
+        var mySwiper = new Swiper('#mySwiper', {
+
+            loop: true,
+
+            autoplay: {
+                delay: 5000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+        mySwiper.el.onmouseover = function () {
+            mySwiper.autoplay.stop();
+        }
+        mySwiper.el.onmouseout = function () {
+            mySwiper.autoplay.start();
+        }     
+    </script>
+</body>
+
+</html>

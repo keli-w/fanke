@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>daoshiqi</title>
+</head>
+ 
+<body>
+  <h1>倒计时：</h1>
+  <div id="box" ></div>
+</body>
+<script>
+ 
+  var oBox = document.getElementById('box');
+ 
+  var future = new Date('2019/11/9');
+ 
+  setInterval(function () {
+ 
+    var now = new Date();
+ 
+    var gap = parseInt((future - now) / 1000);
+ 
+    var days = parseInt(gap / 60 / 60 / 24);
+ 
+    var hours = parseInt(gap / 60 / 60) % 24;
+ 
+    var minutes = parseInt(gap / 60) % 60;
+ 
+    var seconds = gap % 60;
+ 
+ 
+    oBox.innerText =  hours + '：' + minutes + '：' + seconds ;
+ 
+  }, 1000)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  // var oBox = document.getElementById('box');
+ 
+ 
+  // var future = new Date('2019/10/1');
+ 
+  // render();
+  // setInterval(function () {
+  //   render();
+  // }, 1000)
+ 
+ 
+  // function render() {
+  //   var now = new Date();
+ 
+  //   var gap = parseInt((future - now) / 1000); // 差距的秒数
+ 
+  //   var day = parseInt(gap / 60 / 60 / 24);
+ 
+  //   var hours = parseInt(gap / 60 / 60) % 24;
+ 
+  //   var minutes = parseInt(gap / 60) % 60;
+ 
+  //   var seconds = gap % 60;
+ 
+ 
+  //   oBox.innerText = day + '天' + hours + '小时' + minutes + '分钟' + seconds + '秒';
+  // }
+</script>
+ 
+</html>
