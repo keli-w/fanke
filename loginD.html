@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凡客诚品-会员登录</title>
+    <link rel="SHORTCUT ICON" href="images/timg-T.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/loginD.css">
+</head>
+
+<body>
+    <div class="header-T content-T">
+        <a href="#"><img src="images/logo-T.png" alt="" title="凡客诚品"></a>
+        <a href="#" class="bangzhu-T">帮助</a>
+    </div>
+    <div class="main-T">
+        <div class="login-left">
+            <img src="images/img-T.png" alt="" srcset="">
+        </div>
+        <!-- <h3>凡客 Vancl 登录</h3>  <span></span> -->
+        <div class="login-right">
+            <div class="login-right-top">
+                <strong>凡客 Vancl 登录</strong><span>没有账户免费<a href="loginZC.html">注册</a></span>
+            </div>
+            <div class="login-input-T">
+                <ul>
+                    <!-- 需要js，鼠标点击切换页面，改变自己本身的background； -->
+                    <li class="general-T">普通登录</li>
+                     <li class="speedin-T">快速登录</li>
+                </ul>
+
+                <!-- 普通登录 -->
+                <div class="login">
+                        <input type="text" name="user" id="AAA" placeholder="请输入用户名" >
+                        <input type="password" name="pass" id="BBB" placeholder="请输入密码">
+                        <a href="#">找回密码 </a>
+                        <button type="button" class="TTT">登录</button>
+                </div>
+                <!-- 快速登录 -->
+                <div class="login1-T">
+                        <input type="text" placeholder="请输入手机号码" class="inp-T"><button class="but-T">获取短信验证码</button>
+                         <input type="text" placeholder="验证码" class="inp01-T"><div class="code-T"><canvas id="canva"onclick="dj()"></canvas></div>
+                         <span class="codetu-T">看不清楚？换一张</span>
+                        <input type="text" placeholder="请输入手机验证码" class="inp-T">
+                        <button type="submit" class="but01-T">登录</button>
+                </div>
+                <div class="partne-T">
+                    <h1>使用合作网站账号登录凡客</h1>
+                    <img src="images/QQ-T.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 公用底部 -->
+</body>
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/loginD.js"></script>
+<script src="js/login2.php"></script>
+</html>
