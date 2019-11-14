@@ -1,0 +1,206 @@
+/*********购物车头部信息*********/
+.header{
+    width:980px;
+    height:40px;
+    margin:0 auto;
+    padding-top:15px;
+    border-bottom: 1px solid;
+    line-height: 40px;
+}
+.header .logo{
+    float: left;
+}
+.header .header_R{
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    justify-items: self-start;
+}
+.header .header_R a{
+    color:#A10000;
+}
+.header .header_R p:nth-child(1){
+    margin-right: 50px;
+}
+.main{
+    width:980px;
+    margin:30px auto;
+}
+.top{
+    height:30px;
+    background: url(../images/newpromotion.gif) no-repeat;
+    background-position: -460px 0;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.top h2{
+    padding-left: 50px;
+    font-weight: bold;
+}
+.title>span{
+    color:#A10000;
+}
+/*********购物车主要内容*********/
+.content{
+    width:980px;
+    margin:20px auto;
+    border:1px solid #DCDFE4;
+    padding-bottom: 15px;
+}
+.content .list_info{
+    font-weight: bold;
+    height:40px;
+    line-height: 40px;
+    border-bottom:1px solid #B7B7B7;
+    background:#ddd;
+    margin-bottom: 20px;
+}
+.content .list_info p:nth-child(2){
+    width:50px;
+}
+.content .list_info p:nth-child(3){
+    width:350px;
+}
+.content>.list_info p{
+    width:90px;
+    float: left;
+    text-align: center;
+}
+.content .list_info input{
+    width:15px;
+    height:15px;
+    float: left;
+    margin:13px 0px 0 10px;
+}
+.content .goods_info{
+    height:70px;
+    margin:0 10px;
+    background: rgb(221, 221, 221);
+    line-height: 70px;
+}
+.content .goods_info input{
+    float: left;
+    margin:28px 0px 0 25px;
+}
+.content .goods_info p{
+    float: left;
+    width:80px;
+    text-align:center;
+}
+.content .goods_info>a{
+    float: left;
+    width:48px;
+    height:48px;
+    display: block;
+    margin:10px 15px 0 30px;
+}
+.content .goods_info>a>img{
+    width:48px !important;
+    height:48px !important;
+    
+}
+.content .goods_info b{
+    display: block;
+    width:300px;
+    font-style: normal;
+    float: left;
+}
+.content .goods_info div{
+    float: left;
+    width:100px;
+    display: flex;
+    justify-content: space-around;
+}
+.content .goods_info div>input{
+    width:30px;
+    height:15px;
+    text-align: center;
+    margin:25px 0;
+}
+.content .goods_info div a{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    text-align: center;
+    font-size: 20px;
+}
+/*********购物车底部计算总价*********/
+.computer{
+    height:120px;
+    width:980px;
+    border:1px solid peru;
+    background:rgb(255, 254, 245);
+}
+.computer .c-top{
+    height:40px;
+    display: flex;
+    justify-content: left;
+    line-height: 40px;
+}
+.computer .c-top input{
+    margin:13px 10px 0 10px;
+}
+.computer .c-top p{
+    margin:0 40px 0 0;
+}
+.computer .c-top em{
+    color:#A10000;
+    font-weight: bold;
+}
+.computer .c-bottom p{
+    float: left;
+    width:260px;
+    height:50px;
+    line-height: 50px;
+    margin:10px;
+}
+.computer .c-bottom p span,.computer .c-bottom p i{
+    font-size:25px;
+    font-weight: bold;
+    color:#A10000;
+}
+.computer .c-bottom button{
+    float: left;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.C-shopping{
+    width:120px;
+    height:40px;
+    background: #ddd;
+    font-size: 18px;
+    margin:20px 10px 0 400px;
+}
+.jiesuan{
+    width:160px;
+    height:50px;
+    background: #A10000;
+    font-size: 30px;
+    margin:15px 0 0 0;
+    color:#fff;
+}
+/*********底部**********/
+.footer{
+    width:980px;
+    height:120px;
+    margin:50px auto;
+    text-align: center;
+}
+.footer p{
+    height:20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-align:center;
+    color:#999;
+}
+/* 全删 */
+.allDel:hover{
+    color:red;
+}
+/* 单删 */
+.delete{
+    cursor: pointer;
+}
+.delete:hover{
+    color:red;
+}

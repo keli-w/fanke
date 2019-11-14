@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.wrap {
+    height: 100%;
+    width: 86%;
+    margin: 0 auto;
+}
+
+.operation {
+    height: 500px;
+    width: 100%;
+    border-bottom: 1px solid rgb(199, 196, 196);
+}
+.operation .top{
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.operation .top a{
+    display: block;
+    float: left;
+    color:red;
+    font-size: 18px;
+    padding:0 20px;
+}
+.operation .top h2{
+    float: left;
+    color:black;
+    font-size: 18px;
+}
+.operation .operleft {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.operation .operight {
+    height: 100%;
+    width: 50%;
+    float: right;
+    /* background: blue; */
+}
+
+.operleft .graph {
+    height: 100%;
+    width: 30%;
+    float: left;
+    position: relative;
+}
+
+.graph .graph-ul {
+    width: 72px;
+    height: 78%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background: url("../img/b.jpg"); */
+}
+
+.graph .graph-ul li {
+    margin-bottom: 8px;
+    height: 70px;
+    width: 70px;
+}
+
+.graph .graph-ul li .c-lp {
+    height: 70px;
+    width: 70px;
+    background: url("../img/b.jpg");
+    border: 1px solid rgb(187, 188, 190);
+    
+}
+
+.graph .graph-ul li:nth-child(1) .c-lp {
+    background-position: 0 0px;
+}
+
+.graph .graph-ul li:nth-child(2) .c-lp {
+    background-position: 0 -68px;
+}
+
+.graph .graph-ul li:nth-child(3) .c-lp {
+    background-position: 0 -136px;
+}
+
+.graph .graph-ul li:nth-child(4) .c-lp {
+    background-position: 0 -202px;
+}
+
+.graph .graph-ul li:nth-child(5) .c-lp {
+    background-position: 0 -270px;
+}
+
+.graph .graph-ul li .c-lp:hover {
+    border-color: red;
+}
+
+.operleft .Magnifier {
+    width: 70%;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.Magnifier .smallDiv {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    border: 1px solid rgb(199, 196, 196);
+}
+
+.smallDiv img {
+    height: 400px;
+    width: 400px;
+    display: none;
+}
+
+.smallDiv .show {
+    display: block;
+}
+
+.smallDiv .mask {
+    height: 200px;
+    width: 200px;
+    background: white;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: move;
+    display: none;
+}
+
+.Magnifier .bigDiv {
+    height: 440px;
+    width: 440px;
+    border: 2px solid red;
+    position: fixed;
+    top: 30px;
+    left: 750px;
+    overflow: hidden;
+    display: none;
+    z-index: 999;
+}
+
+.bigDiv img {
+    height: 880px;
+    width: 880px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.bigDiv .show {
+    display: block;
+
+}
+
+.operight .main {
+    height: 400px;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.main .c-price {
+    height: 50px;
+    width: 600px;
+    color: red;
+}
+
+.c-price strong,.c-price i{
+    font-size: 20px;
+    color:#a10000;
+    font-weight: bolder;
+}
+
+.c-price a {
+    color: brown;
+}
+
+.c-price a:hover {
+    cursor: pointer;
+}
+
+.main .c-color {
+    height: 50px;
+    width: 600px;
+}
+
+.c-color p {
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+
+.c-color .colorChoice {
+    height: 50px;
+    width: 550px;
+    float: right;
+}
+
+.colorChoice ul li {
+    float: left;
+    margin-left: 6px;
+}
+
+.colorChoice ul li .colorBox {
+    height: 36px;
+    width: 80px;
+    border: 1px solid rgb(180, 176, 176);
+    text-align: center;
+    line-height: 36px;
+}
+
+.colorChoice ul li .colorBox:hover {
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.colorChoice ul li .colorBox p {
+    height: 36px;
+    width: 36px;
+    background-image: url("../img/a.jpg");
+    /* background-position: 0 -36px; */
+}
+
+.colorChoice ul li:nth-child(1) p {
+    background-position: 0 0;
+}
+
+.colorChoice ul li:nth-child(2) p {
+    background-position: 0 -36px;
+}
+
+.main .c-size {
+    height: 50px;
+    width: 600px;
+}
+
+.c-size p {
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+
+.c-size .sizeChoice {
+    height: 50px;
+    width: 550px;
+    float: right;
+}
+
+.sizeChoice ul li {
+    float: left;
+    margin-left: 6px;
+}
+
+.sizeChoice ul li .sizeBox {
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(218, 211, 211);
+}
+
+.sizeChoice ul li .sizeBox:hover {
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.sizeBox p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.main .c-num {
+    height: 30px;
+    width: 600px;
+}
+
+.c-num p {
+    height: 30px;
+    width: 50px;
+    float: left;
+}
+
+.c-num .numChoice {
+    height: 30px;
+    width: 550px;
+    float: right;
+}
+
+.numChoice select {
+    margin-left: 6px;
+}
+
+.main .c-res {
+    height: 40px;
+    width: 600px;
+
+}
+
+.c-res p {
+    height: 30px;
+    width: 50px;
+    float: left;
+}
+
+.c-res .resChoice {
+    height: 30px;
+    width: 550px;
+    float: right;
+}
+
+.resChoice span {
+    margin-left: 6px;
+}
+
+.main .c-click {
+    height: 60px;
+    width: 600px;
+    background: snow;
+    position: relative;
+}
+
+.c-click .c-btns {
+    position: absolute;
+    margin-top: 12px;
+}
+
+.c-click .c-btns button:nth-child(1){
+    background: pink;
+}
+.c-click .c-btns button:nth-child(1)>span{
+    color: black;
+    font-size: 14px;
+}
+.c-click .c-btns button:nth-child(2)>span{
+    color: #fff;
+    font-size: 14px;
+}
+.c-click .c-btns button:nth-child(2) {
+    background: red;
+}
+
+.c-click .c-btns button {
+    height: 36px;
+    width: 140px;
+    margin-right: 20px;
+}
+
+.c-click .c-btns button {
+    border: 1px solid red;
+}
+
+.c-click .c-btns button:hover {
+    cursor: pointer;
+}
+
+.main .c-new {
+    height: 120px;
+    width: 500px;
+}
+
+.c-new h4 {
+    border-bottom: 1px solid red;
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 8px;
+    position: relative;
+    text-align: center;
+}
+
+.c-new h4 span {
+    display: inline-block;
+    background: white;
+    margin-top: 7px;
+    padding: 2px 4px;
+    color: red;
+}
+
+.newChoice {
+    padding-bottom: 10px;
+    border-bottom: 1px solid red;
+}
+
+.newChoice .c-link {
+    margin: 4px 0;
+}
+
+.newChoice .lick {
+    background: red;
+    color: white;
+    margin: 6px 12px 0 0;
+}
+
+.goodShow {
+    border-bottom: 1px solid rgb(192, 191, 191);
+}
+
+.goodShow .c-h51 {
+    margin-top: 40px;
+    margin-bottom: 6px;
+    color: rgb(185, 179, 179);
+}
+
+.goodShow .friLink {
+    height: 40px;
+    color: rgb(196, 195, 195);
+    background: rgb(241, 241, 241);
+    line-height: 40px;
+}
+
+.goodShow .friLink a {
+    color: rgb(216, 216, 216);
+}
+
+.goodShow .c-h52 {
+    margin: 6px 0;
+    color: rgb(185, 179, 179);
+}
+
+.goodShow h6 {
+    color: rgb(196, 195, 195);
+}
+
+.goodShow .showImgs {
+    width: 1200px;
+    margin: auto;
+}
+
+/* 弹窗样式 */
+.tanchuan{
+    width:400px;
+    height:150px;
+    z-index: 9999;
+    position: fixed;
+    top:170px;
+    left:680px;
+    padding:0 50px;
+}
+.tanchuan h2{
+    height:50px;
+    line-height: 50px;
+    font-size: 18px;
+    color:#fff;
+    background: #a10000;
+}
+.tanchuan h2 i{
+    font-size: 25px;
+    font-weight: bolder;
+    color:#fff;
+    padding-left: 200px;
+}
+.tanchuan>div{
+    height:100px;
+    background: #ffc;
+    padding:20px 10px 0 10px;
+}
+.tanchuan>div .car{
+    width: 74px;
+    height: 74px;
+    padding:0 18px;
+    background: url(http://i2.vanclimg.com/cms/20150227/vanclsprite.png) no-repeat scroll -237px -119px;
+    float: left;
+}
+.tanchuan>div .btn{
+    float: right;
+    width:168px;
+    height:32px;
+}
+.btn a{
+    display: block;
+    width:84px;
+    height:32px;
+    line-height: 32px;
+    border:0;
+    font-size: 14px;
+    margin-top:25px;
+    cursor: pointer;
+}
+.goShopp{
+    background:#a10000;
+    color:#727171;
+    float: left;
+}
+.goCar{
+    background: #ddd;
+    color:#fff;
+    float: left;
+}

@@ -1,0 +1,69 @@
+/* 轮播图 */
+.wrap{
+   margin: auto;
+    width: 1200px;
+    height: 100%;
+    background: #ffffff;
+    
+}
+.swiper-container {
+    width: 1200px;
+    height: 535px;
+    margin:0 auto;
+}
+
+table{
+    width:1200px;
+    margin:0 auto;
+}
+/* 优选推荐 */
+.youxuan{
+    width:1200px;
+    margin:0 auto;
+}
+.youxuan h2{
+    height:50px;
+    padding:30px 0;
+    font-size: 18px;
+    color:#9a9a9a;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+.youxuan ul li{
+    float: left;
+    margin-right: 17px;
+}
+.youxuan ul .pic_one{
+    width:590px;
+}
+.youxuan ul .pic_two{
+    width:290px;
+}
+.youxuan ul .pic_two div:first-child{
+    margin-bottom: 17px;
+}
+.youxuan ul .pic_three{
+    width:280px;
+}
+.youxuan h3{
+    height:20px;
+    padding:20px 12px;
+    line-height: 20px;
+    border:1px solid #ddd;
+    border-top:0;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.youxuan h3 span{
+    float: right;
+    color: #a10000;
+    font-family: Arial;
+    line-height: 24px;
+    font-size: 14px;
+}
+.youxuan h3 span em{
+    font-size: 16px;
+    padding-left: 10px;
+}

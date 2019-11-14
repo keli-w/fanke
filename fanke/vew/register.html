@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="http://i.vanclimg.com/common/favicon/favicon.ico">
+        <title>凡客诚品-会员注册</title>
+        <link rel="stylesheet" href="../css/public.css">
+        <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+        <div class="header-T">
+                <a href="home.html"><img src="../images/logo-T.png" alt="" title="凡客诚品"></a>
+                <!-- <a href="#" class="bangzhu-T">帮助</a> -->
+        </div>
+        <div class="main-T">
+             <div class="login-left">
+                <img src="../images/img-T.png" alt="" srcset="">
+             </div>
+             <div class="login-top">
+                        注册新用户 <span>我已注册，现在就<a href="login.html">登录</a></span>
+             </div>
+             <div class="menu-T">
+                        <input type="text" placeholder="验证码" class="inp01-T"><div class="inp-right-T"><canvas id="canvas" width="140" height="46" onclick="dj()" ></canvas></div>
+                        <span id="yzm-T" style="float: left; color: #fff; padding-right: 88px;">眼瞎？验证码都看错</span>
+                         <input type="text" placeholder="请输入手机号" class="inp02-T"><!--onclick="sublim()"--><button class="ZC-verify-T">获取短信验证码</button> 
+                        <span class="oneT">请填写真实的手机号，并进行验证</span>
+                        <input type="text" placeholder="填写手机验证码" class="inp03-T">
+                        <span class="twoT">请输入手机接收到的验证码</span>
+                        <input type="text" placeholder="设定登录密码"class="inp04-T">
+                        <span class="threeT">6-16位字符，可使用字母、数字或符号的组合</span>
+                        <input type="text" placeholder="再次输入密码"class="inp05-T">
+                        <span class="fourT">请再次输入登录密码，两次输入必须一致</span>
+                                <div style="float: left;"><input type="checkbox" class="checkbox-T"><span class="read-T">请阅读<i>《VANCL凡客诚品服务条款》</i></span></div>
+                        <button class="ZC-but-T">立即注册</button>
+             </div>
+        </div>
+        <!-- 公用底部 -->
+        <footer>
+                <div class="footer">
+                <p>Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11010102000579号 出版物经营许可证新出发京批字第直110138号</p>
+                <div class="friend_img">
+                        <a href=""><img src="http://ssl.vanclimg.com/shopping/cert-redlogo.gif" alt=""></a>
+                        <a href=""><img src="http://ssl.vanclimg.com/shopping/cert-costumeorg.gif" alt=""></a>
+                        <a href=""><img src="http://ssl.vanclimg.com/shopping/cert-wsjybzzx.gif" alt=""></a>
+                </div>
+                </div>
+        </footer>
+        <script src="../js/jquery-1.11.0.min.js"></script>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/register.js"></script>
+        <script src="../php/login2.php"></script>
+</body>
+</html>
