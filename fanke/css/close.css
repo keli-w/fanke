@@ -1,0 +1,294 @@
+
+
+ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    margin: 0 14px;
+}
+
+/* body {
+    height: 100%;
+    width: 100%;
+} */
+
+.wrap {
+    height: 100%;
+    width: 86%;
+    margin: 150px auto;
+    /* background: red; */
+
+}
+
+.main {
+    height: 1240px;
+}
+
+.main .imgDiv {
+    height: 230px;
+    width: 230px;
+    border: 1px solid rgb(202, 201, 201);
+}
+
+.main .imgDiv:hover {
+    border: 1px solid red;
+}
+
+.main .imgDiv:hover .bigDiv {
+    display: block;
+}
+
+.imgDiv {
+    position: relative;
+}
+
+.imgDiv img {
+    height: 230px;
+    width: 230px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+p a {
+    font-size: 12px;
+    color: rgb(114, 109, 109);
+}
+
+.priDiv {
+    font-size: 13px;
+    font-weight: 800;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.oDiv {
+    height: 10px;
+    width: 100%;
+}
+
+.bigDiv {
+    width: 260px;
+    height: 360px;
+    display: none;
+    position: absolute;
+    left: 240px;
+    top: -30px;
+    z-index: 999;
+    background: rgb(212, 217, 218);
+    border: 1px solid rgb(153, 151, 151);
+}
+
+.bigDiv img {
+    margin: 10px;
+    height: 240px;
+    width: 240px;
+    border: 1px solid rgb(224, 221, 221);
+}
+
+.main ul li:nth-child(5) .bigDiv{
+    width: 260px;
+    height: 360px;
+    display: none;
+    position: absolute;
+    left: -270px;
+    top: -30px;
+    z-index: 999;
+    background: rgb(212, 217, 218);
+    border: 1px solid rgb(153, 151, 151);
+}
+.main ul li:nth-child(10) .bigDiv{
+    width: 260px;
+    height: 360px;
+    display: none;
+    position: absolute;
+    left: -270px;
+    top: -30px;
+    z-index: 999;
+    background: rgb(212, 217, 218);
+    border: 1px solid rgb(153, 151, 151);
+}
+.main ul li:nth-child(15) .bigDiv{
+    width: 260px;
+    height: 360px;
+    display: none;
+    position: absolute;
+    left: -270px;
+    top: -30px;
+    z-index: 999;
+    background: rgb(212, 217, 218);
+    border: 1px solid rgb(153, 151, 151);
+}
+
+.pro .oLeft {
+    float: left;
+    color: tomato;
+}
+
+.oLeft span {
+    margin-left: 30px;
+}
+.numDiv{
+    float:right
+}
+.btn-primary{
+    height: 23px;
+    width: 50px;
+}
+.navTop{
+    width: 100%;
+    height: 60px;
+    background: rgb(219, 219, 219);
+    margin: 0 auto;
+    border: 1px solid rgb(196, 192, 192);
+}
+.navup{
+    width: 100%;
+    height: 35=0px;
+    background: white;
+    text-align: left;
+    line-height: 30px;
+}
+.navup span:nth-child(1){
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+}
+.navup span:nth-child(3){
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+}
+.navdown{
+    width: 100%;
+    height: 30px;
+    text-align: left;
+}
+.navdown span:nth-child(1){
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+}
+.navdown ul{
+   
+    display: inline-block;
+}
+.navdown li{
+    height: 20px;
+    width: 20px;
+    margin: 0 3px;
+    border: 1px solid gray;
+}
+.navdown li a{
+    height: 100%;
+    width: 100%;
+
+}
+.navdown a:nth-child(1) li{
+    background: black;
+}
+.navdown a:nth-child(2) li{
+    background: white;
+}
+.navdown a:nth-child(3) li{
+    background: red;
+}
+.navdown a:nth-child(4) li{
+    background: pink;
+}
+.navdown a:nth-child(5) li{
+    background: yellow;
+}
+.navdown a:nth-child(6) li{
+    background: gray;
+}
+.navdown a:nth-child(7) li{
+    background: purple;
+}
+.navdown a:nth-child(8) li{
+    background: brown;
+}
+.navdown a li:hover{
+    border: 1px solid red;
+}
+.navBot{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid rgb(173, 168, 168);
+}
+.navBot .cho{
+    height: 30px;
+    width: 100%;
+    border-bottom: 1px solid red;
+}
+.navBot .cho .choLeft{
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+.navBot .cho .choRight{
+    height: 100%;
+    width: 60%;
+    float: right;
+    position: relative;
+
+}
+.c-Left{
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-size: 14px;
+    background: red;
+    
+}
+.c-Right{
+    position: absolute;
+    top:5px;
+    right: 0px;
+}
+.c-Right button{
+    height: 20px;
+    width: 60px;
+}
+.ice{
+    height: 30px;
+    width: 100%;
+}
+.ice ul{
+    height: 100%;
+    width: 80%;
+    float: left;
+}
+.ice ul li{
+    height: 28px;
+    width: 60px;
+    margin: 0;
+    border: 1px solid rgb(177, 173, 173);
+    text-align: center;
+    line-height: 28px;
+}
+.ice ul li input{
+    width: 40px;
+}
+.ice .all{
+    height: 30px;
+    width: 80px;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    background: rgb(233, 231, 230);
+}
+.mid{
+    height: 30px;
+    width: 100%;
+}
+.bot{
+    height: 20px;
+    width: 100%;
+}

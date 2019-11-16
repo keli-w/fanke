@@ -2,6 +2,7 @@ $('body').prepend(`<header>
     <!-- 头部盒子 -->
     <div class="vancl-head">
         <!-- 头部顶端盒子 -->
+        <div class="shopping-car-minbox"></div>
         <div class="vancl-head-top">
             <!-- 版心盒子 -->
             <div id="vancl-centre">
@@ -93,13 +94,13 @@ $('body').prepend(`<header>
                     </em>
                     <ul class="vancl-nav-uls">
                         <li>
-                            <a class="" href="JavaScript">免烫</a>
+                            <a class="" href="close.html">免烫</a>
                         </li>
                         <li>
-                            <a class="" href="JavaScript">易打理</a>
+                            <a class="" href="close.html">易打理</a>
                         </li>
                         <li>
-                            <a class="" href="JavaScript">休闲</a>
+                            <a class="" href="close.html">休闲</a>
                         </li>
                         <li>
                             <a class="" href="JavaScript">高支</a>
@@ -142,13 +143,13 @@ $('body').prepend(`<header>
                     </em>
                     <ul class="vancl-nav-uls">
                         <li>
-                            <a class="" href="JavaScript">免烫</a>
+                            <a class="" href="close.html">免烫</a>
                         </li>
                         <li>
-                            <a class="" href="JavaScript">易打理</a>
+                            <a class="" href="close.html">易打理</a>
                         </li>
                         <li>
-                            <a class="" href="JavaScript">休闲</a>
+                            <a class="" href="close.html">休闲</a>
                         </li>
                         <li>
                             <a class="" href="JavaScript">高支</a>
@@ -189,10 +190,10 @@ $('body').prepend(`<header>
                     <span class="vancl-nav-spans"></span>
                     <ul class="vancl-nav-uls">
                         <li>
-                            <a class="" href="JavaScript">免烫</a>
+                            <a class="" href="close.html">免烫</a>
                         </li>
                         <li>
-                            <a class="" href="JavaScript">易打理</a>
+                            <a class="" href="close.html">易打理</a>
                         </li>
                         <li>
                             <a class="" href="JavaScript">休闲</a>
@@ -236,10 +237,10 @@ $('body').prepend(`<header>
                     <span class="vancl-nav-spans"></span>
                     <ul class="vancl-nav-uls">
                         <li>
-                            <a class="" href="JavaScript">免烫</a>
+                            <a class="" href="close.html">免烫</a>
                         </li>
                         <li>
-                            <a class="" href="JavaScript">易打理</a>
+                            <a class="" href="close.html">易打理</a>
                         </li>
                         <li>
                             <a class="" href="JavaScript">休闲</a>
@@ -283,13 +284,13 @@ $('body').prepend(`<header>
                     <span class="vancl-nav-spans"></span>
                     <ul class="vancl-nav-uls">
                         <li>
-                            <a class="" href="JavaScript">免烫</a>
+                            <a class="" href="close.html">免烫</a>
                         </li>
                         <li>
-                            <a class="" href="JavaScript">易打理</a>
+                            <a class="" href="close.html">易打理</a>
                         </li>
                         <li>
-                            <a class="" href="JavaScript">休闲</a>
+                            <a class="" href="close.html">休闲</a>
                         </li>
                         <li>
                             <a class="" href="JavaScript">高支</a>
@@ -330,13 +331,13 @@ $('body').prepend(`<header>
                     <span class="vancl-nav-spans"></span>
                     <ul class="vancl-nav-uls">
                         <li>
-                            <a class="" href="JavaScript">免烫</a>
+                            <a class="" href="close.html">免烫</a>
                         </li>
                         <li>
-                            <a class="" href="JavaScript">易打理</a>
+                            <a class="" href="close.html">易打理</a>
                         </li>
                         <li>
-                            <a class="" href="JavaScript">休闲</a>
+                            <a class="" href="close.html">休闲</a>
                         </li>
                         <li>
                             <a class="" href="JavaScript">高支</a>
@@ -424,10 +425,10 @@ $('body').prepend(`<header>
                     <span class="vancl-nav-spans"></span>
                     <ul class="vancl-nav-uls">
                         <li>
-                            <a class="" href="JavaScript">免烫</a>
+                            <a class="" href="close.html">免烫</a>
                         </li>
                         <li>
-                            <a class="" href="JavaScript">易打理</a>
+                            <a class="" href="close.html">易打理</a>
                         </li>
                         <li>
                             <a class="" href="JavaScript">休闲</a>
@@ -610,3 +611,152 @@ if(name=="null"){
     $('.span-login').html(str).css('color','#3e3e3e')
     $('.name').html('')
 }
+
+
+/*********头部小型购物车*********/
+var carAppear = document.querySelector('.shopping-car');
+var carBox = document.querySelector('.shopping-car-minbox');
+var carContentSpan = document.querySelector('.shopping-car-span');
+var carA = document.querySelector('.shopping-car-a');
+
+carAppear.onmouseover = function () {
+    //carBox.style.display = 'block';
+    carBox.style.cssText="display:block;background:#fff"
+    carBox.innerHTML = '<img class="shopping-car-img" src="../images/vancl-load.gif" alt="">';
+    var carImg = document.querySelector('.shopping-car-img');
+
+
+    carA.style.background = 'url(../images/vancl-synthesize.png)' + ' ' + 'no-repeat' + ' ' + 'scroll' + ' ' + '-153px' + ' ' + '-29px';
+    carA.style.color = '#a10000';
+    carBox.innerHTML='';
+    carImg.onload = function () {
+        $('.shopping-car-ul').remove()
+        setTimeout(function () {
+            carImg.src = '';
+            // if (localStorage.length) {
+                var Data=JSON.parse(localStorage.getItem('data'))
+                var DataArr=[]
+                $.each(Data,function(i,obj){
+                    DataArr.push(obj)
+                })
+                var zong=localStorage.getItem('zong')
+                if(zong!=null){
+                    zong;
+                }
+                if(zong=='null'){
+                    zong=0;
+                }
+                carBox.innerHTML=`<h2 class="shopping-car-h2">最近加入的商品:</h2>
+                <hr class="shopping-car-hr"><ul class="shopping-car-ul"></ul><hr class="shopping-car-hr">
+                <div class="shopping-car-minbox-examine">
+                <div class="shopping-car-minbox-examine-minbox">共计(未计算促销折扣)<span class="shopping-car-minbox-examine-span">￥${zong}</span></div>
+                <a class="shopping-car-ul-li-delete-a" href="JavaScript">立即结算</a>
+                <strong class="shopping-car-minbox-examine-strong">
+                <a class="shopping-car-minbox-examine-strong-a" href="JavaScript">查看购物车</a>
+                </strong>
+                </div>
+                </div>`
+                $.ajax({
+                    url:'../fanke.json',
+                    dataType:'json',
+                    type:'get',
+                    success:function(json){
+                        var str='';
+                        $.each(json,function(i,item){
+                            $.each(Data,function(index,ele){
+                                if(ele.ID==item.id){
+                                    str+= `<li class="shopping-car-ul-li" id1=${item.id} size1=${ele.size}><div class="shopping-car-ul-li-box"><a href="JavaScript"><img class="shopping-car-ul-li-img" src="${item.url}" alt=""></a></div><h3 class="shopping-car-ul-li-h3"><a href="JavaScript">${item.title}</a></h3><br><div class="shopping-car-ul-li-price"><strong class="shopping-car-ul-li-strong">￥${item.price}</strong><em class="shopping-car-ul-li-em">&times;${ele.num}</em></div><div class="shopping-car-ul-li-delete"><a class="shopping-car-ul-li-delete-a" href="javascript:;">删除</a></div></li> `;
+                                }
+                            })
+                        })
+                        $('.shopping-car-ul').append(str).css('background','#fff')
+                        del(DataArr)
+                    }
+                })
+                if(Data=='null'){
+                    carBox.innerHTML = '您的购物车中没有任何商品';
+                }
+                //carBox.innerHTML = '<h2 class="shopping-car-h2">最近加入的商品:</h2><hr class="shopping-car-hr"><ul class="shopping-car-ul"><li class="shopping-car-ul-li"><div class="shopping-car-ul-li-box"><a href="JavaScript"><img class="shopping-car-ul-li-img" src="../images/vancl-shoe.png" alt=""></a></div><h3 class="shopping-car-ul-li-h3"><a href="JavaScript">凡客帆布鞋 男款 藏蓝色</a></h3><br><div class="shopping-car-ul-li-price"><strong class="shopping-car-ul-li-strong">￥198.00</strong><em class="shopping-car-ul-li-em">&times;1</em></div><div class="shopping-car-ul-li-delete"><a class="shopping-car-ul-li-delete-a" href="JavaScript">删除</a></div></li></ul><hr class="shopping-car-hr"><div class="shopping-car-minbox-examine"><div class="shopping-car-minbox-examine-minbox">共计(未计算促销折扣)<span class="shopping-car-minbox-examine-span">￥198.00</span></div><a class="shopping-car-ul-li-delete-a" href="JavaScript">立即结算</a><strong class="shopping-car-minbox-examine-strong"><a class="shopping-car-minbox-examine-strong-a" href="JavaScript">查看购物车</a></strong></div></div>';
+            // } else {
+            // }
+        }, 500)
+    }
+    carBox.onmouseover = function () {
+        carBox.style.display = 'block';
+        carAppear.style.border = 1 + 'px' + ' ' + 'solid' + ' ' + '#a10000';
+        carAppear.style.borderBottom = 'none';
+        carAppear.style.background = '#fff';
+        carAppear.style.height = 30 + 'px';
+        carAppear.style.Zindex = 999999;
+        carA.style.Zindex = 999999;
+
+        carA.style.color = '#a10000';
+        carA.style.background = 'url(../images/vancl-synthesize.png)' + ' ' + 'no-repeat' + ' ' + 'scroll' + ' ' + '-153px' + ' ' + '-29px';
+        // }
+
+        // var kai = null;
+    }
+}
+
+// carBox.onmouseout = function () {
+//     carBox.style.display = 'none';
+//     carAppear.style.border = 1 + 'px' + ' ' + 'solid' + ' ' + '#fff';
+//     carA.style.background = 'url(./images/vancl-synthesize.png)' + ' ' + 'no-repeat' + ' ' + 'scroll' + ' ' + '-153px' + ' ' + '0px';
+//     carA.style.color = '#fff';
+
+// }
+
+
+carBox.onmouseout = function () {
+    carBox.style.display = 'none';
+    carA.style.background = 'url(../images/vancl-synthesize.png)' + ' ' + 'no-repeat' + ' ' + 'scroll' + ' ' + '-153px' + ' ' + '0px';
+    carA.style.color = '#fff';
+
+}
+
+carAppear.onmouseout = function () {
+    carBox.style.display = 'none';
+    carA.style.background = 'url(../images/vancl-synthesize.png)' + ' ' + 'no-repeat' + ' ' + 'scroll' + ' ' + '-153px' + ' ' + '0px';
+    carA.style.color = '#fff';
+
+    // carBox.innerHTML = '';
+}
+
+/*********小购物车的商品删除******/
+function del(DataArr){
+    $('.shopping-car-ul-li-delete-a').click(function(){
+        $(this).parents('div').parent('li').remove()
+        //删数据
+        var id2=$(this).parents('.shopping-car-ul-li').attr('id1')
+        var size2=$(this).parents('.shopping-car-ul-li').attr('size1')
+        for(var i=0;i<DataArr.length;i++){
+            if(id2==DataArr[i].ID&size2==DataArr[i].size){
+                DataArr.splice(i,1)
+                break;
+            }
+        }
+        if(DataArr.length==0){
+            carBox.innerHTML = '您的购物车中没有任何商品';
+            localStorage.removeItem('data')
+            localStorage.removeItem('sum')
+        }
+        localStorage.setItem('data',JSON.stringify(DataArr))
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

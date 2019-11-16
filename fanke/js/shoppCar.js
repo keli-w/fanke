@@ -44,6 +44,7 @@ $(function(){
             $('.content').append(results)
             selectAll()
             selectOne()
+            zong1()
         }
     })
 })
@@ -207,7 +208,16 @@ function zong() {
     })
     $('.c-bottom').children('p').find('span').html(zong)
 }
-
+//存储总价
+function zong1() {
+    var sub1=document.querySelectorAll('.Subtotal')
+    var zong1=0;
+    $.each(sub1,function(index,ele){
+        zong1+=Number(ele.innerHTML)
+    })
+    console.log(zong1)
+    localStorage.setItem('zong',JSON.parse(zong1))
+}
 
 
 
